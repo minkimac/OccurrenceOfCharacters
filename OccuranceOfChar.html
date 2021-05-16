@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Occurance of characters</title>
+    </head>
+    <body style="zoom: 300%;">
+        <div style="display: inline-grid">
+            <input type="file" id="filePicker"  class="form-control" accept=".txt" required />
+            <input type="text" id="charTxtBox" placeholder="Type something" onclick="onTextChanged()">
+            <label id="errorBox" style="color: red; display: none;"></label>
+            <div>
+                <input type="checkbox" id="ignoreCaseBox" style="margin-left: auto;" onchange="onCasingChecked()">
+                <label>Ignore casing of characters</label>
+            </div>
+            <button type="button" onclick="onCharCountClicked()">Count</button>
+            <div id="charCountDiv" hidden><h3>Occurance of characters</h3></div>
+        </div>
+        <script src="OccuranceOfChar.js" type="text/javascript"></script>
+    </body>
+</html>
+
+<!-- stylesheet start -->
+<style>
+    *{
+        margin-top: 5px;
+    }
+</style>
+<!-- stylesheet end -->
