@@ -3,11 +3,11 @@
     <head>
         <title>Occurance of characters</title>
     </head>
-    <body style="zoom: 300%;">
-        <div style="display: inline-grid">
+    <body style="zoom: 200%;">
+        <div style="display:inline-grid; width:fit-content; max-width: 25vw">
             <input type="file" id="filePicker"  class="form-control" accept=".txt" required />
             <input type="text" id="charTxtBox" placeholder="Type something" onclick="onTextChanged()">
-            <label id="errorBox" style="color: red; display: none;"></label>
+            <div><label id="errorBox" style="color: red; display: none; font-size: small;"></label></div>
             <div>
                 <input type="checkbox" id="ignoreCaseBox" style="margin-left: auto;" onchange="onCasingChecked()">
                 <label>Ignore casing of characters</label>
